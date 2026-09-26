@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | NearGamers | DJ Apps Studio</title>
+  <meta name="description" content="NearGamers Privacy Policy: local profiles and game history, nearby player sharing, temporary match chat, Google Nearby diagnostics, deletion and support.">
+  <link rel="canonical" href="https://djapps-studio.github.io/neargamers/privacy/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="/">NearGamers<small>For Android by DJ Apps Studio</small></a>
+  <nav aria-label="Main navigation"><a href="/">Studio</a><a href="/neargamers/privacy/" aria-current="page">Privacy</a></nav>
+</header>
+<main id="main" tabindex="-1">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective date and last updated: <time datetime="2026-09-26">26 September 2026</time></p>
+  <p>This policy explains how NearGamers for Android (<strong>com.neargamers.app</strong>) handles information in version <strong>0.1.0 (version code 1)</strong>. NearGamers is published by <strong>Denny John, an individual developer using the DJ Apps Studio name</strong>. In this policy, “I” refers to Denny John.</p>
+
+  <h2>1. How NearGamers works</h2>
+  <p>NearGamers offers board games with nearby players on compatible Android phones and solo games against an on-device opponent. Core gameplay can work without internet access. There is no registration, login or cloud account; a player profile is created locally.</p>
+  <p>Information is handled in three separate ways: app records stay on your phone; nearby multiplayer sends information to other players' phones; and Google Play services may collect the Nearby SDK diagnostics described below. If you email support, I also receive the information you choose to send.</p>
+
+  <h2>2. Information kept on your phone</h2>
+  <ul>
+    <li><strong>Your profile:</strong> your chosen display name, built-in avatar and a stable random player identifier. You can use a nickname; a legal name is not required. Renaming your profile does not change the identifier.</li>
+    <li><strong>Device identity and opponents:</strong> an installation identity key pair and fingerprint, opponent profiles and trusted-device records used to recognize previously verified devices. These opponent records are created by the app, not taken from your phone's contacts. The private identity key stays on your phone.</li>
+    <li><strong>Multiplayer records:</strong> match participants, name and avatar snapshots, selected games, moves, results, timestamps and confirmation or recovery information, used to play, resume matches and display history.</li>
+    <li><strong>Ratings and standings:</strong> locally calculated results and rankings. Existing opponent ratings are not exchanged or merged between phones.</li>
+    <li><strong>Solo records:</strong> solo game history, with up to 100 records, and one saved Air Hockey match state, including scores and difficulty.</li>
+    <li><strong>Preferences:</strong> tutorial progress, appearance and sound choices.</li>
+  </ul>
+  <p>Core gameplay does not request your email address, phone number, physical address, date of birth, contacts, photos or microphone recordings. You can still disclose personal information by typing it into a display name or optional chat message; nearby recipients receive that text.</p>
+
+  <h2>3. Discovery before connection approval</h2>
+  <p>When nearby discovery is active, your <strong>display name and shortened installation identity fingerprint are advertised to nearby discovering devices before a connection is approved</strong>. Connection approval therefore does not keep these discovery details private. Choose a display name you are comfortable making visible nearby.</p>
+  <p>Discovery may restart while the app is open to recover a saved session. Advertising and discovery stop when the app goes into the background. New devices use a connection-approval and verification flow; previously trusted devices can be recognized for reconnection.</p>
+
+  <h2>4. Information exchanged with nearby players</h2>
+  <p>Connected players exchange display names, avatar selections, stable player identifiers, installation public identity keys and fingerprints, and the game information needed for their shared session. This includes participant and match identifiers, moves, results, timestamps and confirmation or recovery information. Identifiers help recognize opponents and reconcile matches; a random identifier should not be treated as anonymous.</p>
+  <p>Participating phones may retain opponent profiles, trusted-device records and shared match history locally. In group Ludo, which supports up to four players, the host distributes the roster and relays relevant session messages to the other participants. Information can therefore reach all players in the match, including through the host's phone.</p>
+  <p>NearGamers does not upload your profile or game history to a publisher-operated server. Sharing with nearby players still transfers information off your phone, even when the game works offline.</p>
+
+  <h2>5. Optional match chat</h2>
+  <p>You may send text messages of up to 500 characters to current match participants. Message text and author and message identifiers are sent to their phones. For group Ludo, the host receives and relays group messages. There is no photo, file, audio or video sharing feature.</p>
+  <p>The app keeps a bounded list of recent messages temporarily in memory, rather than saving chat in permanent game history. Changing the match bound to chat or losing the app process clears that in-memory list. A temporary disconnect does not necessarily clear it. Other players may independently copy or screenshot messages, and their copies are outside the app's temporary retention controls.</p>
+  <p>Chat is optional. This version does not provide in-app chat reporting, player blocking or chat moderation. Avoid sending private or sensitive information to other players.</p>
+
+  <h2>6. Nearby permissions and location</h2>
+  <p>Nearby multiplayer uses Google Play services Nearby Connections, which can communicate using Bluetooth, Bluetooth Low Energy and Wi-Fi. The transport used depends on the devices and Android version.</p>
+  <ul>
+    <li><strong>Bluetooth permissions</strong> support scanning, advertising and connecting to nearby devices.</li>
+    <li><strong>Wi-Fi state, control and nearby Wi-Fi access</strong> support discovery and local communication.</li>
+    <li><strong>Legacy location permissions</strong> support discovery on older Android versions: coarse location on Android 8–9 (API 26–28), and fine location on Android 10–12 (API 29–31). The app checks whether the system location setting is enabled where discovery requires it.</li>
+    <li><strong>Network-state access</strong> is used by the Nearby dependency.</li>
+  </ul>
+  <p>Modern Bluetooth scanning and nearby Wi-Fi permission declarations state that they are not used to derive location. NearGamers does not obtain, store or transmit latitude or longitude for gameplay. Legacy permission requirements do not mean that the app uses GPS coordinates. Android and Google services have their own data practices.</p>
+  <p>You can review or revoke permissions in Android settings. Denying required permissions prevents or limits nearby multiplayer; solo play is available without another player.</p>
+
+  <h2>7. Google SDK diagnostics</h2>
+  <p>The reviewed version uses Google Play services Nearby Connections 19.3.0. Google's <a href="https://developers.google.com/nearby/connections/overview">Nearby Connections documentation</a> says the SDK collects usage analytics to improve the service: discovery and connection latency, reliability and throughput, together with device model, country, build version and application package name. This provider collection is separate from your local game records and the information sent to other players. Country information is not described here as GPS coordinates.</p>
+  <p>Google says you can allow or deny this collection in <strong>Android Settings → Google → Usage &amp; diagnostics</strong>. Google controls its diagnostics handling and retention; this policy does not promise a deletion period for Google-held data. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for its practices and controls.</p>
+  <p>NearGamers has no publisher-operated cloud database, cloud save, advertising, analytics or crash-reporting service. The reviewed app does not request direct internet access, but Google Play services can carry out its own diagnostics activity. Locally packaged open-source licence notices use Google's OSS Licenses component; Google's <a href="https://developers.google.com/android/guides/play-data-disclosure">core Play services disclosure</a> states that this component does not collect end-user data. That statement does not remove Nearby's separate diagnostics collection.</p>
+
+  <h2>8. Retention and deleting local data</h2>
+  <p>Profiles, trusted-device records, multiplayer history, ratings and preferences normally persist through app restarts and compatible updates. There is no automatic time-based expiry for those records. Solo history retains at most 100 records, replacing older records as the ledger grows. Air Hockey keeps the current saved match. Chat follows the temporary in-memory limits in section 5.</p>
+  <p>To remove the app's local data, use <strong>Android Settings → Apps → NearGamers → Storage → Clear storage / Clear app data</strong>, or uninstall NearGamers. Setting names vary by device. The reviewed version has no in-app control to delete individual histories, trusted opponents or all stored data. Reinstalling and creating a new profile can create a new player identifier.</p>
+  <p>Android cloud backup and app-data device transfer are disabled in the reviewed app configuration. NearGamers has no app export/import or cloud restoration feature.</p>
+  <p><strong>Deleting data on your phone does not delete copies on other players' phones, copied text, screenshots, support correspondence or Google's diagnostics.</strong> I cannot remotely access your local app records or erase copies held by other players. Use Google's controls for Google-held information and the contact below for correspondence you sent to me.</p>
+
+  <h2>9. Security</h2>
+  <p>NearGamers uses Android app storage and permission controls. Its private installation identity key stays on the device, and peer verification helps authenticate connections. Google documents encryption for established Nearby device-to-device connections. This does not establish that pre-connection advertisements are private or that every Google diagnostics transfer has been independently assessed.</p>
+  <p>No independent security certification or complete all-traffic encryption assessment is claimed. No device, application or wireless connection can guarantee absolute security, and recipients can keep information they receive.</p>
+
+  <h2>10. Support and privacy enquiries</h2>
+  <p>Anyone may send a support or privacy enquiry to <a href="mailto:support.djapps@gmail.com">support.djapps@gmail.com</a>. <strong>Only Denny John can access this support inbox.</strong> Sending an email provides your email address, message and any attachments you choose to include. These are used to review and respond to your enquiry. Email providers also process correspondence under their own policies.</p>
+  <p><strong>There is no fixed retention period for support emails.</strong> Correspondence may remain in the inbox after an enquiry is answered; there is no automatic 90-day deletion commitment. You can email the same address to ask about, correct or request deletion of correspondence I hold. I will review your request and explain any limits, including applicable legal obligations. This does not delete copies held by your email provider or other recipients.</p>
+  <p>Please send only the information needed for your enquiry. Contacting support does not give me access to your phone's local profiles, game history or other players' copies.</p>
+
+  <h2>11. Policy changes</h2>
+  <p>I may update this page when NearGamers' features or data practices change. The effective date and last updated date above identify the current policy. Review this public page for updates.</p>
+
+  <aside aria-labelledby="website-privacy">
+    <h2 id="website-privacy">About this website</h2>
+    <p>This page requires no login and contains no forms, analytics scripts, advertising, embedded media or browser storage. GitHub Pages hosts it and processes visitor connection information, including IP addresses, for hosting and security under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting this page does not give the website access to your NearGamers app records. External links lead to services with their own privacy practices.</p>
+  </aside>
+</main>
+<footer>
+  <p>NearGamers by Denny John · DJ Apps Studio · <a href="mailto:support.djapps@gmail.com">Contact support</a></p>
+  <p><a href="/neargamers/privacy/">Privacy Policy</a> · <a href="/">DJ Apps Studio</a></p>
+</footer>
+</body>
+</html>
